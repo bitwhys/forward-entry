@@ -1,0 +1,4 @@
+Sitemap: https://foward-entry.dev/sitemap.xml
+
+User-agent: *
+Disallow: /api
