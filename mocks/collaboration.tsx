@@ -1,10 +1,10 @@
 const text =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter."
+  "Connect with recruiters and tech professionals effortlessly. Sync your profile for a unified online presence that showcases your skills and accomplishments, giving you an edge in the competitive job market."
 
 const content = [
   {
     id: "0",
-    title: "Seamless Integration",
+    title: "🔗 LinkedIn Integration",
     text: text,
   },
   {

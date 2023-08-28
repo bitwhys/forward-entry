@@ -11,7 +11,8 @@ export const IntegrationsSection = ({}: IntegrationsSectionProps) => {
     <Section crosses>
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
-          <h2 className="h2 mb-4 md:mb-8">AI chat app for seamless collaboration</h2>
+          <h2 className="h2 mb-4 md:mb-8">Supercharge Your Job Search with Seamless Integrations! 🚀
+          </h2>
           <ul className="mb-10 max-w-[22.5rem] md:mb-14">
             {content.map((item) => (
               <li className="mb-3 py-3" key={item.id}>
