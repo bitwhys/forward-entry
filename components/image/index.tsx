@@ -1,4 +1,5 @@
-'use client'
+"use client"
+
 // FIXME: should this be a client component
 import { useState } from "react"
 import { ImageProps, default as NextImage } from "next/image"

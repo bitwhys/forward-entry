@@ -1,4 +1,5 @@
-'use client'
+"use client"
+
 // FIXME: should this be a client component
 import { useEffect, useState } from "react"
 import Link from "next/link"
@@ -41,37 +42,37 @@ const Header = ({}: HeaderProps) => {
   return (
     <div
       className={`fixed left-0 top-0 z-50 w-full ${
-        openNavigation ? "bg-n-8" : " bg-n-8/90 backdrop-blur-sm"
-      } border-n-6 lg:bg-n-8/90 border-b lg:backdrop-blur-sm`}
+        openNavigation ? "bg-n-8" : " bg-neutral-a1 backdrop-blur-sm"
+      } border-b border-separator lg:backdrop-blur-sm`}
     >
-      <div className="lg:px-7.5 flex h-[4.75rem] items-center px-5 lg:h-[5.25rem] xl:px-10">
+      <div className="flex h-[4.75rem] items-center px-5 lg:h-[5.25rem] lg:px-7.5 xl:px-10">
         <Logo className="xl:mr-8" />
         <nav
           className={`${
             openNavigation ? "flex" : "hidden"
-          } bg-n-8 fixed bottom-0 left-0 right-0 top-[4.8125rem] lg:static lg:mx-auto lg:flex lg:bg-transparent`}
+          } fixed bottom-0 left-0 right-0 top-[4.8125rem] bg-n-8 lg:static lg:mx-auto lg:flex lg:bg-transparent`}
         >
-          <div className="z-2 relative m-auto flex flex-col items-center justify-center lg:flex-row">
+          <div className="relative z-2 m-auto flex flex-col items-center justify-center lg:flex-row">
             {navigation.map((item) => (
               <Link
-                className={`text-n-1 hover:text-color-1 relative block text-2xl uppercase transition-colors ${
+                className={`relative block text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
                   item.onlyMobile ? "lg:hidden" : ""
-                } lg:-mr-0.25 px-6 py-6 md:py-8 lg:text-xs lg:font-semibold ${
+                } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
                   item.url === pathname ? "z-2 lg:text-n-1" : "lg:text-n-1/50"
-                } lg:hover:text-n-1 lg:leading-5 xl:px-12`}
+                } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
                 href={item.url}
                 onClick={() => item.url.startsWith(pathname) && handleClick()}
                 key={item.id}
               >
                 {item.title}
                 <div
-                  className={`w-0.25 bg-n-6 absolute bottom-0 left-0 hidden h-1.5 lg:block ${
-                    pathname === item.url ? "lg:bg-n-1 lg:h-3" : ""
+                  className={`absolute bottom-0 left-0 hidden h-1.5 w-0.25 bg-n-6 lg:block ${
+                    pathname === item.url ? "lg:h-3 lg:bg-n-1" : ""
                   }`}
                 ></div>
                 <div
-                  className={`w-0.25 bg-n-6 absolute bottom-0 right-0 hidden h-1.5 lg:block ${
-                    pathname === item.url ? "lg:bg-n-1 lg:h-3" : ""
+                  className={`absolute bottom-0 right-0 hidden h-1.5 w-0.25 bg-n-6 lg:block ${
+                    pathname === item.url ? "lg:h-3 lg:bg-n-1" : ""
                   }`}
                 ></div>
               </Link>
@@ -91,15 +92,15 @@ const Header = ({}: HeaderProps) => {
               <div className="border-n-2/10 absolute left-1/2 top-1/2 aspect-square w-[36.125rem] -translate-x-1/2 -translate-y-1/2 rounded-full border"></div>
               <div className="border-n-2/10 absolute left-1/2 top-1/2 aspect-square w-[23.125rem] -translate-x-1/2 -translate-y-1/2 rounded-full border"></div>
             </div>
-            <div className="w-0.25 bg-n-6 absolute left-5 top-0 h-full"></div>
-            <div className="w-0.25 bg-n-6 absolute right-5 top-0 h-full"></div>
+            <div className="absolute left-5 top-0 h-full w-0.25 bg-n-6"></div>
+            <div className="absolute right-5 top-0 h-full w-0.25 bg-n-6"></div>
             <div className="absolute left-16 top-[4.4rem] h-3 w-3 rounded-full bg-gradient-to-b from-[#DD734F] to-[#1A1A32]"></div>
             <div className="absolute right-16 top-[12.6rem] h-3 w-3 rounded-full bg-gradient-to-b from-[#B9AEDF] to-[#1A1A32]"></div>
             <div className="absolute left-12 top-[26.8rem] h-6 w-6 rounded-full bg-gradient-to-b from-[#88E5BE] to-[#1A1A32]"></div>
           </div>
         </nav>
         <Link
-          className={`button text-n-1/50 hover:text-n-1 mr-8 hidden transition-colors lg:block ${
+          className={`text-n-1/50 button mr-8 hidden transition-colors hover:text-n-1 lg:block ${
             searchParams.has("new") ? "lg:text-n-1" : ""
           }`}
           href="/login?new=true"

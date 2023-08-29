@@ -27,8 +27,8 @@ const Heading = ({
     {tag && <Tagline className={`mb-4 md:justify-center ${tagClassName || ""}`}>{tag}</Tagline>}
     {titleLarge && <h1 className="h1">{titleLarge}</h1>}
     {title && <h2 className="h2">{title}</h2>}
-    {textLarge && <p className="h5 text-n-4 mt-6">{textLarge}</p>}
-    {text && <p className="body-2 text-n-4 mt-4">{text}</p>}
+    {textLarge && <p className="h5 mt-6 text-n-4">{textLarge}</p>}
+    {text && <p className="body-2 mt-4 text-n-4">{text}</p>}
     {children}
   </div>
 )

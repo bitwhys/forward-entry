@@ -7,7 +7,7 @@ type NotificationProps = {
 
 const Notification = ({ className, title }: NotificationProps) => (
   <div
-    className={`border-n-1/10 flex items-center rounded-2xl border bg-[#474060]/40 p-4 pr-6 backdrop-blur ${
+    className={`flex items-center rounded-2xl border border-n-1/10 bg-[#474060]/40 p-4 pr-6 backdrop-blur ${
       className || ""
     }`}
   >
