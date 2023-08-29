@@ -19,19 +19,19 @@ export const IntegrationsSection = ({}: IntegrationsSectionProps) => {
                   <Image src="/images/check.svg" width={24} height={24} alt="Check" />
                   <h6 className="body-2 ml-5">{item.title}</h6>
                 </div>
-                {item.text && <p className="body-2 mt-3 text-muted">{item.text}</p>}
+                {item.text && <p className="body-2 text-muted mt-3">{item.text}</p>}
               </li>
             ))}
           </ul>
-          <Button>Try it now</Button>
+          <Button href="/login">Try it now</Button>
         </div>
         <div className="mt-15 lg:ml-auto lg:mt-0 xl:w-[37.5rem]">
           <div className="relative lg:mx-auto lg:w-[22.5rem]">
-            <p className="body-2 mb-4 text-muted md:mb-16 lg:mb-32">{text}</p>
+            <p className="body-2 text-muted mb-4 md:mb-16 lg:mb-32">{text}</p>
             <div className="relative left-1/2 flex aspect-square w-[22.5rem] -translate-x-1/2 scale-75 rounded-full border md:scale-100">
               <div className="m-auto flex aspect-square w-60 rounded-full border">
-                <div className="m-auto aspect-square w-[5.75rem] rounded-full bg-conic-gradient p-[0.1875rem]">
-                  <div className="flex h-full w-full items-center justify-center rounded-full bg-background">
+                <div className="bg-conic-gradient m-auto aspect-square w-[5.75rem] rounded-full p-[0.1875rem]">
+                  <div className="bg-background flex h-full w-full items-center justify-center rounded-full">
                     <Image src="/images/brainwave-symbol.svg" width={48} height={48} alt="Brainwave" />
                   </div>
                 </div>
@@ -47,7 +47,7 @@ export const IntegrationsSection = ({}: IntegrationsSectionProps) => {
                     key={app.id}
                   >
                     <div
-                      className={`relative -top-[1.625rem] flex h-[3.25rem] w-[3.25rem] rounded-xl border border-separator bg-background ${
+                      className={`border-separator bg-background relative -top-[1.625rem] flex h-[3.25rem] w-[3.25rem] rounded-xl border ${
                         index === 1 && "-rotate-[45deg]"
                       } ${index === 2 && "-rotate-[90deg]"} ${index === 3 && "-rotate-[135deg]"} ${
                         index === 4 && "-rotate-[180deg]"

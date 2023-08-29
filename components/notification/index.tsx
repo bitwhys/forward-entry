@@ -6,11 +6,7 @@ type NotificationProps = {
 }
 
 const Notification = ({ className, title }: NotificationProps) => (
-  <div
-    className={`flex items-center rounded-2xl border border-n-1/10 bg-[#474060]/40 p-4 pr-6 backdrop-blur ${
-      className || ""
-    }`}
-  >
+  <div className={`flex items-center rounded-2xl border bg-gray-a3 p-4 pr-6 backdrop-blur ${className || ""}`}>
     <div className="mr-5">
       <Image className="w-full rounded-xl" src="/images/notification/image-1.png" width={52} height={52} alt="Image" />
     </div>

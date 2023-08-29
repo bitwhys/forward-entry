@@ -14,46 +14,46 @@ import Section from "@/components/section"
 const BackgroundShapes = ({ mounted }) => (
   <>
     <div className="absolute -top-[42.375rem] left-1/2 aspect-square w-[78rem] -translate-x-1/2 rounded-full border md:-top-[38.5rem] xl:-top-[32rem]">
-      <div className="absolute left-1/2 top-1/2 aspect-square w-[65.875rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-separator"></div>
-      <div className="absolute left-1/2 top-1/2 aspect-square w-[51.375rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-separator"></div>
-      <div className="absolute left-1/2 top-1/2 aspect-square w-[36.125rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-separator"></div>
-      <div className="absolute left-1/2 top-1/2 aspect-square w-[23.125rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-separator"></div>
-      <div className="absolute bottom-1/2 left-1/2 h-1/2 w-0.25 origin-bottom rotate-[46deg]">
+      <div className="border-separator absolute left-1/2 top-1/2 aspect-square w-[65.875rem] -translate-x-1/2 -translate-y-1/2 rounded-full border"></div>
+      <div className="border-separator absolute left-1/2 top-1/2 aspect-square w-[51.375rem] -translate-x-1/2 -translate-y-1/2 rounded-full border"></div>
+      <div className="border-separator absolute left-1/2 top-1/2 aspect-square w-[36.125rem] -translate-x-1/2 -translate-y-1/2 rounded-full border"></div>
+      <div className="border-separator absolute left-1/2 top-1/2 aspect-square w-[23.125rem] -translate-x-1/2 -translate-y-1/2 rounded-full border"></div>
+      <div className="w-0.25 absolute bottom-1/2 left-1/2 h-1/2 origin-bottom rotate-[46deg]">
         <div
           className={`-ml-1 -mt-36 h-2 w-2 rounded-full bg-gradient-to-b from-[#DD734F] to-[#1A1A32] transition-transform duration-500 ease-out ${
             mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
         ></div>
       </div>
-      <div className="absolute bottom-1/2 left-1/2 h-1/2 w-0.25 origin-bottom -rotate-[56deg]">
+      <div className="w-0.25 absolute bottom-1/2 left-1/2 h-1/2 origin-bottom -rotate-[56deg]">
         <div
           className={`-ml-1 -mt-32 h-4 w-4 rounded-full bg-gradient-to-b from-[#DD734F] to-[#1A1A32] transition-transform duration-500 ease-out ${
             mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
         ></div>
       </div>
-      <div className="absolute bottom-1/2 left-1/2 h-1/2 w-0.25 origin-bottom rotate-[54deg]">
+      <div className="w-0.25 absolute bottom-1/2 left-1/2 h-1/2 origin-bottom rotate-[54deg]">
         <div
           className={`transit -ml-1 mt-[12.9rem] hidden h-4 w-4 rounded-full bg-gradient-to-b from-[#B9AEDF] to-[#1A1A32] transition-transform duration-500 ease-out xl:block ${
             mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
         ></div>
       </div>
-      <div className="absolute bottom-1/2 left-1/2 h-1/2 w-0.25 origin-bottom -rotate-[65deg]">
+      <div className="w-0.25 absolute bottom-1/2 left-1/2 h-1/2 origin-bottom -rotate-[65deg]">
         <div
           className={`-ml-1.5 mt-52 h-3 w-3 rounded-full bg-gradient-to-b from-[#B9AEDF] to-[#1A1A32] transition-transform duration-500 ease-out ${
             mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
         ></div>
       </div>
-      <div className="absolute bottom-1/2 left-1/2 h-1/2 w-0.25 origin-bottom -rotate-[85deg]">
+      <div className="w-0.25 absolute bottom-1/2 left-1/2 h-1/2 origin-bottom -rotate-[85deg]">
         <div
           className={`-ml-3 -mt-3 h-6 w-6 rounded-full bg-gradient-to-b from-[#88E5BE] to-[#1A1A32] transition-transform duration-500 ease-out ${
             mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
         ></div>
       </div>
-      <div className="absolute bottom-1/2 left-1/2 h-1/2 w-0.25 origin-bottom rotate-[70deg]">
+      <div className="w-0.25 absolute bottom-1/2 left-1/2 h-1/2 origin-bottom rotate-[70deg]">
         <div
           className={`-ml-3 -mt-3 h-6 w-6 rounded-full bg-gradient-to-b from-[#88E5BE] to-[#1A1A32] transition-transform duration-500 ease-out ${
             mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
@@ -83,7 +83,7 @@ export const HeroSection = ({}: HeroProps) => {
       customPaddings
     >
       <div className="container relative" ref={parallaxRef}>
-        <div className="relative z-1 mx-auto mb-[3.875rem] max-w-[62rem] text-center md:mb-20 lg:mb-[6.25rem]">
+        <div className="z-1 relative mx-auto mb-[3.875rem] max-w-[62rem] text-center md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6">
             Job searching for developers, built by{` `}
             <span className="relative inline-block">
@@ -97,16 +97,16 @@ export const HeroSection = ({}: HeroProps) => {
               />
             </span>
           </h1>
-          <p className="body-1 mx-auto mb-6 max-w-3xl text-n-2 lg:mb-8">
+          <p className="body-1 text-n-2 mx-auto mb-6 max-w-3xl lg:mb-8">
             Before the robots take all the jobs, unleash the power of AI to find that perfect role.
           </p>
-          <Button href="/pricing" white>
+          <Button href="/login" white>
             Get started
           </Button>
         </div>
         <div className="relative mx-auto max-w-[23.25rem] md:max-w-5xl xl:mb-24">
-          <div className="relative z-1 rounded-2xl bg-conic-gradient p-0.5">
-            <div className="relative rounded-[0.875rem] bg-background">
+          <div className="z-1 bg-gradient-to-b gradient-lime relative rounded-2xl p-0.5">
+            <div className="bg-background relative rounded-[0.875rem]">
               <div className="h-[1.375rem] rounded-t-[0.875rem] bg-[#43435C]"></div>
               <div className="aspect-[33/40] overflow-hidden rounded-b-[0.875rem] md:aspect-[688/490] lg:aspect-[1024/490]">
                 <Image
@@ -119,7 +119,7 @@ export const HeroSection = ({}: HeroProps) => {
               </div>
               <Generating className="absolute bottom-5 left-4 right-4 md:bottom-8 md:left-1/2 md:right-auto md:w-[30.5rem] md:-translate-x-1/2" />
               <ScrollParallax isAbsolutelyPositioned>
-                <ul className="absolute -left-[5.5rem] bottom-[7.625rem] hidden rounded-2xl border bg-[#474060]/40 px-1 py-1 backdrop-blur xl:flex">
+                <ul className="absolute -left-[5.5rem] bottom-[7.625rem] hidden rounded-2xl border bg-gray-a3 px-1 py-1 backdrop-blur xl:flex">
                   {[
                     "/images/icons/home-smile.svg",
                     "/images/icons/file-02.svg",
@@ -158,7 +158,7 @@ export const HeroSection = ({}: HeroProps) => {
       </div>
       {/*<div className="pointer-events-none absolute left-10 right-10 top-[55.25rem] hidden h-0.25 bg-n-6 xl:block"></div>*/}
       <svg
-        className="pointer-events-none absolute left-[2.1875rem] top-[54.9375rem] z-2 hidden xl:block"
+        className="z-2 pointer-events-none absolute left-[2.1875rem] top-[54.9375rem] hidden xl:block"
         width="11"
         height="11"
         fill="none"
@@ -169,7 +169,7 @@ export const HeroSection = ({}: HeroProps) => {
         />
       </svg>
       <svg
-        className="pointer-events-none absolute right-[2.1875rem] top-[54.9375rem] z-2 hidden xl:block"
+        className="z-2 pointer-events-none absolute right-[2.1875rem] top-[54.9375rem] hidden xl:block"
         width="11"
         height="11"
         fill="none"
