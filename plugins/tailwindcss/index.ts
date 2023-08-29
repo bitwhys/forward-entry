@@ -28,29 +28,36 @@ const tailwindPlugin = plugin.withOptions(
             ...cssVariables[":root"],
             [`--gradient-${name}-from`]: colors.light.from,
             [`--gradient-${name}-to`]: colors.light.to,
+            // @ts-ignore
             ...(colors.light.via
               ? {
+                  // @ts-ignore
                   [`--gradient-${name}-via`]: colors.light.via,
                 }
               : {}),
           }
           cssVariables[":root"] = light
+          // @ts-ignore
           cssVariables[".light"] = light
           cssVariables[".dark"] = {
             ...cssVariables[".dark"],
             [`--gradient-${name}-from`]: colors.dark.from,
             [`--gradient-${name}-to`]: colors.dark.to,
+            // @ts-ignore
             ...(colors.dark.via
               ? {
+                  // @ts-ignore
                   [`--gradient-${name}-via`]: colors.dark.via,
                 }
               : {}),
           }
+          // @ts-ignore
           cssVariables[`.gradient-${name}`] = {
             "--tw-gradient-name": `url(#gradient-${name})`,
             "--tw-gradient-from": `var(--gradient-${name}-from)`,
             "--tw-gradient-via": `var(--gradient-${name}-via)`,
             "--tw-gradient-to": `var(--gradient-${name}-to)`,
+            // @ts-ignore
             "--tw-gradient-stops": colors.light.via
               ? `var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to)`
               : "var(--tw-gradient-from), var(--tw-gradient-to)",
@@ -246,4 +253,4 @@ const tailwindPlugin = plugin.withOptions(
 export default tailwindPlugin
 
 // ===== Helpers =====
-const getVariable = (token: string) => `--${token}`
+// const getVariable = (token: string) => `--${token}`
