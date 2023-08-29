@@ -15,25 +15,25 @@ export const RoadMapSection = () => (
         {roadmap.map((item, index) => (
           <div
             className={cn(
-              `p-0.25  rounded-[2.5rem] md:flex`,
+              `rounded-[2.5rem]  p-0.25 md:flex`,
               { "md:translate-y-[7rem]": index % 2 !== 0 },
-              item.colorful ? "gradient-lime bg-gradient-to-b" : "bg-gray-2"
+              item.colorful ? "bg-gradient-to-b gradient-lime" : "bg-gray-2"
             )}
             key={item.id}
           >
             <div
               className={cn(
-                "xl:p-15 relative overflow-hidden  rounded-[2.4375rem] p-8",
+                "relative overflow-hidden rounded-[2.4375rem]  p-8 xl:p-15",
                 item.colorful ? "bg-gray-2" : "bg-gray-3"
               )}
             >
               <div className="absolute left-0 top-0 max-w-full">
                 <Image className="w-full" src="/images/grid.png" width={550} height={550} alt="Grid" />
               </div>
-              <div className="z-1 relative">
+              <div className="relative z-1">
                 <div className="mb-8 flex max-w-[27rem] items-center justify-between md:mb-20">
                   <Tagline>{item.date}</Tagline>
-                  <div className="bg-n-1 text-n-8 flex items-center rounded px-4 py-1">
+                  <div className="flex items-center rounded bg-n-1 px-4 py-1 text-n-8">
                     <Image
                       className="mr-2.5"
                       src={item.status === "done" ? "/images/icons/check.svg" : "/images/icons/loading-01.svg"}
@@ -61,7 +61,7 @@ export const RoadMapSection = () => (
         {/*  </div>*/}
         {/*</div>*/}
       </div>
-      <div className="md:mt-15 mt-12 flex justify-center xl:mt-20">
+      <div className="mt-12 flex justify-center md:mt-15 xl:mt-20">
         <Button>Our roadmap</Button>
       </div>
     </div>

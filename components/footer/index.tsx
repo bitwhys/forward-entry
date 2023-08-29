@@ -15,7 +15,7 @@ const Footer = ({}: FooterProps) => (
       <nav className="ml-auto hidden items-center justify-center lg:flex">
         {navigation.slice(0, -1).map((item) => (
           <Link
-            className={`font-code px-12 py-8 text-xs font-semibold uppercase leading-5 text-n-1/50 transition-colors hover:text-n-1`}
+            className={`font-code text-n-1/50 px-12 py-8 text-xs font-semibold uppercase leading-5 transition-colors hover:text-n-1`}
             href={item.url}
             key={item.id}
           >

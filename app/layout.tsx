@@ -6,7 +6,7 @@ import { bluuNextFont, geliatFont, ibmPlexMono } from "@/styles/fonts"
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={cn(bluuNextFont.variable, geliatFont.variable, ibmPlexMono.variable)}>
-      <body className={cn("bg-background text-body font-sans text-base antialiased")}>
+      <body className={cn("bg-background font-sans text-base text-body antialiased")}>
         <ThemeProvider attribute="class" themes={["light", "dark"]} defaultTheme="system" enableSystem>
           {children}
           {/* Gradients */}

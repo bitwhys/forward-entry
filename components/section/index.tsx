@@ -1,9 +1,11 @@
+import type { ReactNode } from "react"
+
 type SectionProps = {
   className?: string
   crosses?: boolean
   crossesOffset?: string
   customPaddings?: boolean
-  children: React.ReactNode
+  children: ReactNode
 }
 
 const Section = ({ className, crosses, crossesOffset, customPaddings, children }: SectionProps) => (
@@ -18,12 +20,12 @@ const Section = ({ className, crosses, crossesOffset, customPaddings, children }
     {crosses && (
       <>
         <div
-          className={`absolute left-7.5 right-7.5 top-0 hidden h-0.25 bg-separator ${
+          className={`absolute inset-x-7.5 top-0 hidden h-0.25 bg-separator${
             crossesOffset && crossesOffset
           } pointer-events-none right-10 lg:block xl:left-10`}
         ></div>
         <svg
-          className={`absolute -top-[0.3125rem] left-[1.5625rem] hidden ${
+          className={`absolute left-[1.5625rem] top-[-0.3125rem] hidden ${
             crossesOffset && crossesOffset
           } pointer-events-none lg:block xl:left-[2.1875rem]`}
           xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +39,7 @@ const Section = ({ className, crosses, crossesOffset, customPaddings, children }
           />
         </svg>
         <svg
-          className={`absolute -top-[0.3125rem]  right-[1.5625rem] hidden ${
+          className={`absolute right-[1.5625rem]  top-[-0.3125rem] hidden ${
             crossesOffset && crossesOffset
           } pointer-events-none lg:block xl:right-[2.1875rem]`}
           xmlns="http://www.w3.org/2000/svg"

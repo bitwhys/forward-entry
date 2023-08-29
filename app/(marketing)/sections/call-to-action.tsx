@@ -8,7 +8,7 @@ export const CallToAction = ({}: CallToActionProps) => (
   <Section crosses>
     <div className="container">
       <div className="relative mx-auto max-w-[43.125rem] py-8 md:py-14 xl:py-0">
-        <div className="z-1 relative text-center">
+        <div className="relative z-1 text-center">
           <h1 className="h1 mb-6">
             Be part of the future of{" "}
             <span className="relative inline-block">
@@ -22,7 +22,7 @@ export const CallToAction = ({}: CallToActionProps) => (
               />
             </span>
           </h1>
-          <p className="body-1 text-n-4 mb-8">
+          <p className="body-1 mb-8 text-n-4">
             Unleash the power of AI within Brainwave. Upgrade your productivity with Brainwave, the open AI chat app.
           </p>
           <Button href="/login" white>
@@ -30,10 +30,10 @@ export const CallToAction = ({}: CallToActionProps) => (
           </Button>
         </div>
         <div className="pointer-events-none absolute left-1/2 top-1/2 h-[46.5rem] w-[46.5rem] -translate-x-1/2 -translate-y-1/2 rounded-full border">
-          <div className="border-separator absolute left-1/2 top-1/2 h-[39.25rem] w-[39.25rem] -translate-x-1/2 -translate-y-1/2 rounded-full border"></div>
-          <div className="border-separator absolute left-1/2 top-1/2 h-[30.625rem] w-[30.625rem] -translate-x-1/2 -translate-y-1/2 rounded-full border"></div>
-          <div className="border-separator absolute left-1/2 top-1/2 h-[21.5rem] w-[21.5rem] -translate-x-1/2 -translate-y-1/2 rounded-full border"></div>
-          <div className="border-separator absolute left-1/2 top-1/2 h-[13.75rem] w-[13.75rem] -translate-x-1/2 -translate-y-1/2 rounded-full border"></div>
+          <div className="absolute left-1/2 top-1/2 h-[39.25rem] w-[39.25rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-separator"></div>
+          <div className="absolute left-1/2 top-1/2 h-[30.625rem] w-[30.625rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-separator"></div>
+          <div className="absolute left-1/2 top-1/2 h-[21.5rem] w-[21.5rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-separator"></div>
+          <div className="absolute left-1/2 top-1/2 h-[13.75rem] w-[13.75rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-separator"></div>
         </div>
         {/*<div className="pointer-events-none absolute left-1/2 top-1/2 h-[46.5rem] w-[46.5rem] -translate-x-1/2 -translate-y-1/2 rounded-full border opacity-60 mix-blend-color-dodge">*/}
         {/*  <div className="absolute left-1/2 top-1/2 h-[58.85rem] w-[58.85rem] -translate-x-3/4 -translate-y-1/2">*/}

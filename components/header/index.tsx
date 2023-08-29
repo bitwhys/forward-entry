@@ -50,14 +50,14 @@ const Header = ({}: HeaderProps) => {
         <nav
           className={`${
             openNavigation ? "flex" : "hidden"
-          } fixed bottom-0 left-0 right-0 top-[4.8125rem] bg-n-8 lg:static lg:mx-auto lg:flex lg:bg-transparent`}
+          } fixed inset-x-0 bottom-0 top-[4.8125rem] bg-n-8 lg:static lg:mx-auto lg:flex lg:bg-transparent`}
         >
           <div className="relative z-2 m-auto flex flex-col items-center justify-center lg:flex-row">
             {navigation.map((item) => (
               <Link
                 className={`relative block text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
                   item.onlyMobile ? "lg:hidden" : ""
-                } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
+                } p-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
                   item.url === pathname ? "z-2 lg:text-n-1" : "lg:text-n-1/50"
                 } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
                 href={item.url}
