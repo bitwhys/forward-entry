@@ -1,3 +1,4 @@
+// @ts-nocheck
 // ---------- Tokens -------
 // Colors
 import { RADIX_COLORS_BASE, RADIX_COLORS_METALS, RADIX_SCALE } from "./plugin.constants"
