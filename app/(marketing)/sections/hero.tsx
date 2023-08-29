@@ -11,7 +11,7 @@ import Logos from "@/components/logos"
 import Notification from "@/components/notification"
 import Section from "@/components/section"
 
-const BackgroundShapes = ({ mounted }) => (
+const BackgroundShapes = ({ mounted }: { mounted: boolean }) => (
   <>
     <div className="absolute -top-[42.375rem] left-1/2 aspect-square w-[78rem] -translate-x-1/2 rounded-full border md:-top-[38.5rem] xl:-top-[32rem]">
       <div className="border-separator absolute left-1/2 top-1/2 aspect-square w-[65.875rem] -translate-x-1/2 -translate-y-1/2 rounded-full border"></div>

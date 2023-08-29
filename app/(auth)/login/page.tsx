@@ -2,8 +2,6 @@
 
 import { useSearchParams } from "next/navigation"
 
-import Button from "@/components/button"
-import Image from "@/components/image"
 import Section from "@/components/section"
 import AuthForm from "@/app/(auth)/login/auth-form"
 
